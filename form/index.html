@@ -1,0 +1,753 @@
+<html>
+
+<!-- Mirrored from holygraceacademy.com/form/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Oct 2020 14:16:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+	<title>Holygrace Academy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+<!---->
+<!--    <script src="https://use.fontawesome.com/b4793bba4a.js"></script>-->
+
+    <link href="public_html/admin_assets/admin/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="public_html/admin_assets/admin/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <script src="public_html/admin_assets/admin/plugins/jquery/jquery-2.1.3.min.js"></script>
+    <script src="public_html/admin_assets/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- toastr pulgin -->
+    <link href="public_html/site_assets/toastr/build/toastr.min.css" rel="stylesheet">
+    <script src="public_html/site_assets/toastr/build/toastr.min.js"></script>
+
+    <!-- file upload pulgin -->
+    <script src="public_html/site_assets/plugins/vendor/jquery.ui.widget.js"></script>
+    <script src="public_html/site_assets/plugins/jquery.iframe-transport.js"></script>
+    <script src="public_html/site_assets/plugins/jquery.fileupload.js"></script>
+    <style>
+        #input2 {border-style: none none solid none}
+        #inputnone{border-style: none }
+
+        .toast-message p{ color:#fff !important; }
+        .myProgress { width: 100%; background-color: #ddd;margin-top:20px }
+        .myBar { width: 1%; height: 11px; background-color: #4CAF50; }
+.for_h4
+{
+	background:#0a819c;
+    padding: 9px;
+    color: #fff;
+    margin-top: 2%;
+}
+.text-right
+{
+text-align:right !important;
+}
+.pb15
+{
+	padding-bottom: 15px;
+}
+label{
+	font-weight:normal;
+}
+th,td
+{
+	padding:1px;
+}
+
+    </style>
+</head>
+<body style="background: #f0f2f3;">
+
+<div style="margin: 3%;padding: 30px; background: #fff;box-shadow: 0px 0px 8px 5px #ccc;">
+   <img src="public_html/site_assets/img/logo.png">
+  <!--<h2> HOLY GRACE ACADEMY, MALA</h2>
+<p>KURUVILASSERY P.O -680732, <br/>CBSE AFFLN NO. 930395,<br/> SCHOOL CODE:75464<br/>
+Tel: 91-480-893366,2891647<br/> Email: info@holygraceacademy.com
+(TO BE FILLED IN CAPITAL LETTERS)</p>-->
+    <br>
+	
+	
+	<!---------------------------------------------------------------------------->
+	<h4 class="for_h4">YOUR  DETAILS</h4>
+	
+	
+    <form method="post" action="http://holygraceacademy.com/form/Site_ctrl/form_data">
+ <div class="col-md-12">
+      <div class="col-md-4  pb15">
+	  <label>Class to which admission is sought</label>
+      <!--<input type="text" name="class" placeholder="" style="padding: 5px;width: 100%" >-->
+	  <select class="form-control" name="class" id='purpose' required>
+	  <option>--Select Class--</option>
+	  <option value="LKG">LKG</option>
+	  <option value="UKG">UKG</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5">5</option>
+	  <option value="6">6</option>
+	  <option value="7">7</option>
+	  <option value="8">8</option>
+	  <option value="9">9</option>
+	  <option value="10">10</option>
+	  <option value="Plus One">Plus One</option>
+	  <option value="Plus Two">Plus Two</option>
+	 
+	  </select>
+         <label>Name(As per DOB Certificate / X Registration Card)</label>
+         <input id="inputnone" type="text" name="name" required style="width: 100%;height: 34px;border: 1px solid #a9a9a9;" >
+         
+         
+          <label>Date of Birth</label>
+                <input id="inputnone" type="date" required name="dob" style="width: 100%;height: 34px;border: 1px solid #a9a9a9;" >
+               
+                <label style="display:block">Sex</label>
+              <input type="radio" name="sex" value="Male"> Male
+                    <input type="radio" name="sex" value="Female"> Female
+                    <input type="radio" name="sex" value="Others"> Others <br/>
+					
+	<!--------------------------------------------------------------------------------------->	
+	         <h4 style="color: #000;padding: 10px 0px;">Details Of Parents - Father</h4>
+             <label style="display:block; padding-top:5px">Parent's Name (Father)</label>
+             <input type="text" required name="parents" style="padding: 5px;width: 100%" >
+              
+			<label style="display:block; padding-top:5px">Educational Qualification</label>
+            <input type="text" required name="father_qualification" style="padding: 5px;width: 100%" >
+			
+			<label style="display:block; padding-top:5px">Residential Address</label>
+            <input type="text" required name="father_residential" style="padding: 5px;width: 100%" >
+              
+			<label style="display:block; padding-top:5px">Email</label>
+            <input type="email" required  name="father_email" style="padding: 5px;width: 100%" >
+              
+			<label style="display:block; padding-top:5px">Contact No</label>
+            <input type="text" name="father_mobile" style="padding: 5px;width: 100%" >
+              
+			<label style="display:block; padding-top:5px">Whatsapp No</label>
+            <input type="text" name="father_whatsapp" style="padding: 5px;width: 100%" >
+              
+			<label style="display:block; padding-top:5px">Occupation(Specify the designation / Nature of business)</label>
+            <textarea style="width:100%" required name="father_occupation" type="text"></textarea>
+            
+			<label style="display:block; padding-top:5px">Official Address</label>
+            <input type="text" required name="father_official" style="padding: 5px;width: 100%" >
+             
+			<label style="display:block; padding-top:5px">Monthly Income</label>
+            <input type="text" name="father_income" style="padding: 5px;width: 100%" >
+			
+			
+			  
+             <label>Parent's Signature(Image)</label>
+                <td colspan="5">
+				<input type="file" class="custom-file fileupload1 text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename2" readonly="" name="signature" >
+                     <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g1_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name1" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop1"> </div>
+			
+			
+			
+			
+			<h4 style="color: #000;padding: 10px 0px;">Details Of Parents - Mother</h4>
+             <label>Mother</label>
+             <input type="text" required name="mother" style="padding: 5px;width: 100%" >
+              
+			<label style="display:block; padding-top:5px">Educational Qualification</label>
+            <input type="text" required name="mother_qualification" style="padding: 5px;width: 100%" >
+			
+			<label style="display:block; padding-top:5px">Residential Address</label>
+            <input type="text" required name="mother_residential" style="padding: 5px;width: 100%" >
+              
+			<label style="display:block; padding-top:5px">Email</label>
+            <input type="email" required name="mother_email" style="padding: 5px;width: 100%" >
+              
+			<label style="display:block; padding-top:5px">Contact No</label>
+            <input type="text" name="mother_mobile" style="padding: 5px;width: 100%" >
+              
+			<label style="display:block; padding-top:5px">Whatsapp No</label>
+            <input type="text" name="mother_whatsapp" style="padding: 5px;width: 100%" >
+              
+			<label style="display:block; padding-top:5px">Occupation(Specify the designation / Nature of business)</label>
+            <textarea  style="width:100%" required name="mother_occupation" type="text"></textarea>
+            
+			<label style="display:block; padding-top:5px">Official Address</label>
+            <input type="text" name="mother_official" style="padding: 5px;width: 100%" >
+             
+			<label style="display:block; padding-top:5px">Monthly Income</label>
+            <input type="text" name="mother_income" style="padding: 5px;width: 100%" >
+              
+
+			  
+               
+               
+	  </div>
+	  <div class="col-md-6  pb15">
+	  <label>Religion</label>
+      <input type="text" required name="religion" style="padding: 5px;width: 100%" >
+                
+       <label>Caste</label>
+       <input type="text" name="caste" style="padding: 5px;width: 100%" >
+                
+        <label>Category OBC/OEC/Gen-SC/ST/EWS</label>
+        <input required type="text" name="category" style="padding: 5px;width: 100%" >
+		
+		
+		 <label>Aadhar No</label>
+        <input  type="text" name="aadhar_no" style="padding: 5px;width: 100%" >
+              
+               
+	  
+	  <label style="display:block">Do you claim tax benefit on fees</label>
+        <input type="radio" name="claim_tax" value="Yes"> Yes
+        <input type="radio" name="claim_tax" value="No"> No
+		
+		<label style="display:block">Whether the candidate is single Girl Child</label>
+        <input type="radio" name="single_girl" value="Yes"> Yes
+        <input type="radio" name="single_girl" value="No"> No
+		
+		
+		<label style="display:block">Whether the candidate is Specially abled(Divyangjan)</label>
+        <input type="radio" name="abled" value="Yes"> Yes
+        <input type="radio" name="abled" value="No"> No
+		
+		<label style="display:block">Whether the candidate is belonging to the EWS(Economically Weaker Section)</label>
+        <input type="radio" name="EWS" value="Yes"> Yes
+        <input type="radio" name="EWS" value="No"> No
+		
+		
+		<label style="display:block">Name and Address of last attended School</label>
+        <textarea  style="width:100%" name="last_school_address" width="100%"></textarea>
+		
+		<label style="display:block; padding-top:5px">Class Last Attended</label>
+        <input type="text" name="last_class" style="padding: 5px;width: 100%" >
+              
+		
+		<div  id='business'>
+		
+		<label style="display:block">Last School affliated is</label>
+        <input type="radio" name="last_s_affli" value="CBSE"> CBSE 
+        <input type="radio" name="last_s_affli" value="ICSE"> ICSE 
+        <input type="radio" name="last_s_affli" value="STATE BOARD"> STATE BOARD 
+        <input type="radio" name="last_s_affli" value="ANY OTHER"> ANY OTHER
+       
+	  <br/><br/>
+	  
+	  <label>Result Of last Class (Mark List(pdf))</label>
+       <input type="file" class="custom-file fileupload3 text-right" name="filename" id="avatar">
+      <input type="hidden" class="form-control form-white filename4" readonly="" name="mark_list" >
+       <div class="myProgress" style="width: 94%;">
+       <div class="myBar" id="prog_bar_g3_id_1"  style="display:none;" >
+         <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+        </div>
+        </div>
+        <div class="img_name3" style="width:100%;text-align: left; "></div>
+        <div class="col s12 pro_id_shop3"> </div>
+		
+		<table width="100%" border="1">
+		<thead>
+		<tr>
+		<td>Subject</td>
+		<td>Maximum Marks</td>
+		<td>Marks Obtained</td>
+		<td>% of Marks</td>
+		<td>Remarks</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td> <input type="text" name="subject1" style="padding: 5px;width: 100%" placeholder="Subject"></td>
+		<td> <input type="text" name="subject1_max" style="padding: 5px;width: 100%"  placeholder="Maximum Marks"></td>
+		<td> <input type="text" name="subject1_mark" style="padding: 5px;width: 100%"  placeholder="Marks Obtained"></td>
+		<td> <input type="text" name="subject1_percentage" style="padding: 5px;width: 100%"  placeholder="% of Marks"></td>
+		<td> <input type="text" name="subject1_remarks" style="padding: 5px;width: 100%"  placeholder="Remarks"></td>
+		</tr>
+		
+		<tr>
+		<td> <input type="text" name="subject2" style="padding: 5px;width: 100%" placeholder="Subject"></td>
+		<td> <input type="text" name="subject2_max" style="padding: 5px;width: 100%"  placeholder="Maximum Marks"></td>
+		<td> <input type="text" name="subject2_mark" style="padding: 5px;width: 100%"  placeholder="Marks Obtained"></td>
+		<td> <input type="text" name="subject2_percentage" style="padding: 5px;width: 100%"  placeholder="% of Marks"></td>
+		<td> <input type="text" name="subject2_remarks" style="padding: 5px;width: 100%"  placeholder="Remarks"></td>
+		</tr>
+		
+		<tr>
+		<td> <input type="text" name="subject3" style="padding: 5px;width: 100%" placeholder="Subject"></td>
+		<td> <input type="text" name="subject3_max" style="padding: 5px;width: 100%"  placeholder="Maximum Marks"></td>
+		<td> <input type="text" name="subject3_mark" style="padding: 5px;width: 100%"  placeholder="Marks Obtained"></td>
+		<td> <input type="text" name="subject3_percentage" style="padding: 5px;width: 100%"  placeholder="% of Marks"></td>
+		<td> <input type="text" name="subject3_remarks" style="padding: 5px;width: 100%"  placeholder="Remarks"></td>
+		</tr>
+		
+		
+		<tr>
+		<td> <input type="text" name="subject4" style="padding: 5px;width: 100%" placeholder="Subject"></td>
+		<td> <input type="text" name="subject4_max" style="padding: 5px;width: 100%"  placeholder="Maximum Marks"></td>
+		<td> <input type="text" name="subject4_mark" style="padding: 5px;width: 100%"  placeholder="Marks Obtained"></td>
+		<td> <input type="text" name="subject4_percentage" style="padding: 5px;width: 100%"  placeholder="% of Marks"></td>
+		<td> <input type="text" name="subject4_remarks" style="padding: 5px;width: 100%"  placeholder="Remarks"></td>
+		</tr>
+		
+		
+		<tr>
+		<td> <input type="text" name="subject5" style="padding: 5px;width: 100%" placeholder="Subject"></td>
+		<td> <input type="text" name="subject5_max" style="padding: 5px;width: 100%"  placeholder="Maximum Marks"></td>
+		<td> <input type="text" name="subject5_mark" style="padding: 5px;width: 100%"  placeholder="Marks Obtained"></td>
+		<td> <input type="text" name="subject5_percentage" style="padding: 5px;width: 100%"  placeholder="% of Marks"></td>
+		<td> <input type="text" name="subject5_remarks" style="padding: 5px;width: 100%"  placeholder="Remarks"></td>
+		</tr>
+		
+		
+		<tr>
+		<td> <input type="text" name="subject6" style="padding: 5px;width: 100%" placeholder="Subject"></td>
+		<td> <input type="text" name="subject6_max" style="padding: 5px;width: 100%"  placeholder="Maximum Marks"></td>
+		<td> <input type="text" name="subject6_mark" style="padding: 5px;width: 100%"  placeholder="Marks Obtained"></td>
+		<td> <input type="text" name="subject6_percentage" style="padding: 5px;width: 100%"  placeholder="% of Marks"></td>
+		<td> <input type="text" name="subject6_remarks" style="padding: 5px;width: 100%"  placeholder="Remarks"></td>
+		</tr>
+		
+		</tbody>
+		</table>
+		
+		</div>
+              
+	  <h4>Details Of Siblings(If Any)</h4>
+        
+	  <table width="100%" border="1">
+		<thead>
+		<tr>
+		<td>Name</td>
+		<td>Brother / Sister</td>
+		<td>Age</td>
+		<td>Name Of School</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td> <input type="text" name="sibling1" style="padding: 5px;width: 100%" placeholder="Name"></td>
+		<td> <input type="text" name="sibling1_bs" style="padding: 5px;width: 100%"  placeholder="Brother / Sister"></td>
+		<td> <input type="text" name="sibling1_age" style="padding: 5px;width: 100%"  placeholder="Age"></td>
+		<td> <input type="text" name="sibling1_school" style="padding: 5px;width: 100%"  placeholder="Name Of School"></td>
+		
+		</tr>
+		
+		<tr>
+		<td> <input type="text" name="sibling2" style="padding: 5px;width: 100%" placeholder="Name"></td>
+		<td> <input type="text" name="sibling2_bs" style="padding: 5px;width: 100%"  placeholder="Brother / Sister"></td>
+		<td> <input type="text" name="sibling2_age" style="padding: 5px;width: 100%"  placeholder="Age"></td>
+		<td> <input type="text" name="sibling2_age" style="padding: 5px;width: 100%"  placeholder="Name Of School"></td>
+		
+		</tr>
+		
+		<tr>
+		<td> <input type="text" name="sibling3" style="padding: 5px;width: 100%" placeholder="Name"></td>
+		<td> <input type="text" name="sibling3_bs" style="padding: 5px;width: 100%"  placeholder="Brother / Sister"></td>
+		<td> <input type="text" name="sibling3_age" style="padding: 5px;width: 100%"  placeholder="Age"></td>
+		<td> <input type="text" name="sibling3_school" style="padding: 5px;width: 100%"  placeholder="Name Of School"></td>
+		
+		</tr>
+		
+		
+		</tbody>
+		</table>
+		<label style="display:block; padding-top:5px">Identification Mark</label>
+        <input type="text" name="identi_mark" style="padding: 5px;width: 100%" >
+              
+              <br/>
+         
+             <label style="display:block">Birth Certificate(pdf)</label>
+              
+			    <input type="file" class="custom-file fileupload2 text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename3" readonly="" name="birth_certificate" >
+                     <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g2_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name2" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop2"> </div>
+           
+		  <div id='transfer'>
+             <label style="display:block">Transfer Certificate(pdf)</label>
+              
+			    <input type="file" class="custom-file fileupload4 text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename5" readonly="" name="transfer_certificate" >
+                     <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g4_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name4" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop4"> </div>
+          
+          </div>
+
+              
+			   
+			   
+			   
+			   
+			   </div>
+     
+            <div class="col-md-2">
+				<img src="public_html/site_assets/img/profile.png"/>
+                    <input type="file" class="custom-file fileupload text-right" name="filename" id="avatar">
+                    
+                    <input type="hidden" class="form-control form-white filename1" readonly="" name="photo_file" >
+                    <p>Photo With Date</p>
+                    <div class="myProgress" style="width: 94%;">
+                        <div class="myBar" id="prog_bar_g_id_1"  style="display:none;" >
+                            <p id="pro_p_id_shop" style=" margin-top: -11px; position: absolute; color: #fff; font-size: 12px;  margin-left: 20%; "></p>
+                        </div>
+                    </div>
+                    <div class="img_name" style="width:100%;text-align: left; "></div>
+                    <div class="col s12 pro_id_shop"> </div>
+                </div>
+		   
+            
+         
+		   
+		  
+		    
+		   <!----------------------------------------------------------------------->
+		 
+		   </div>
+		  
+         
+		   <div style="clear:both"></div>
+		   
+  
+		 <h4 class="for_h4">DECLARATION</h4>
+		 <p> I hereby declare that the above information including Name of the child, Father's/Mother's/					
+Guardian's Name and date of birth furnished by me is correct to the best of my knowledge &					
+belief. I Shall abide by the rules of the School. </p>
+
+        <div style="margin-top: 20px;"><input type="submit"  value="Submit" class="btn btn-success"> </div>
+
+
+    </form>
+</div>
+
+
+<script>
+$('#purpose').on('change', function () {
+    if (this.value == 'LKG') {
+        $("#business").hide();
+		$("#transfer").hide();
+    } else {
+        $("#business").show();
+        $("#transfer").show();
+    }
+
+});
+</script>
+
+<script type="text/javascript">
+    tos_success 	= '';
+    tos_error 		= '';
+    tos_warning 	= '';
+    if(tos_success!=''){
+        toastr.success(''+tos_success+'', '')
+    }
+
+    if(tos_error!=''){
+        toastr.error(''+tos_error+'', '')
+    }
+
+    if(tos_warning!=''){
+        toastr.warning(''+tos_warning+'', '')
+    }
+</script>
+
+<script type="text/javascript">
+    var up_status = '';
+
+    $(document).ready(function(){
+        $('.fileupload1').fileupload({
+            url: "http://holygraceacademy.com/form/site_ctrl/upload_signature",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop1').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop1').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename2').html('');
+                    $('.filename2').val(data.result.file);
+                    $('.img_name1').html('');
+                    $('.img_name1').append(' UploadingCompleted...');
+                    $('.pro_id_shop1').html('');
+                    move('prog_bar_g1_id_1','pro_id_shop1');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name1').html('');
+                        $('.img_name1').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name1').html('');
+                        $('.img_name1').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name1').html('');
+                    $('.img_name1').append('Try again!..');
+                }
+                $('.pro_id_shop1').html('');
+            }
+        });
+    });
+
+	
+	$(document).ready(function(){
+        $('.fileupload2').fileupload({
+            url: "http://holygraceacademy.com/form/site_ctrl/upload_birth_certi",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop2').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop2').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename3').html('');
+                    $('.filename3').val(data.result.file);
+                    $('.img_name2').html('');
+                    $('.img_name2').append(' UploadingCompleted...');
+                    $('.pro_id_shop2').html('');
+                    move('prog_bar_g2_id_1','pro_id_shop2');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name2').html('');
+                        $('.img_name2').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name2').html('');
+                        $('.img_name2').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name2').html('');
+                    $('.img_name2').append('Try again!..');
+                }
+                $('.pro_id_shop2').html('');
+            }
+        });
+    });
+	
+	$(document).ready(function(){
+        $('.fileupload3').fileupload({
+            url: "http://holygraceacademy.com/form/site_ctrl/upload_mark_list",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop3').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop3').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename4').html('');
+                    $('.filename4').val(data.result.file);
+                    $('.filename4').html('');
+                    $('.img_name3').append(' UploadingCompleted...');
+                    $('.pro_id_shop3').html('');
+                    move('prog_bar_g3_id_1','pro_id_shop3');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name3').html('');
+                        $('.img_name3').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name3').html('');
+                        $('.img_name3').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name3').html('');
+                    $('.img_name3').append('Try again!..');
+                }
+                $('.pro_id_shop3').html('');
+            }
+        });
+    });
+	
+
+$(document).ready(function(){
+        $('.fileupload4').fileupload({
+            url: "http://holygraceacademy.com/form/site_ctrl/upload_transfer_certi",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop4').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop4').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename5').html('');
+                    $('.filename5').val(data.result.file);
+                    $('.img_name4').html('');
+                    $('.img_name4').append(' UploadingCompleted...');
+                    $('.pro_id_shop4').html('');
+                    move('prog_bar_g4_id_1','pro_id_shop4');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name4').html('');
+                        $('.img_name4').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name4').html('');
+                        $('.img_name4').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name4').html('');
+                    $('.img_name4').append('Try again!..');
+                }
+                $('.pro_id_shop4').html('');
+            }
+        });
+    });
+	
+	$(document).ready(function(){
+        $('.fileupload5').fileupload({
+            url: "http://holygraceacademy.com/form/site_ctrl/upload_pas_certi",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop5').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop5').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename6').html('');
+                    $('.filename6').val(data.result.file);
+                    $('.img_name5').html('');
+                    $('.img_name5').append(' UploadingCompleted...');
+                    $('.pro_id_shop5').html('');
+                    move('prog_bar_g5_id_1','pro_id_shop5');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name5').html('');
+                        $('.img_name5').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name5').html('');
+                        $('.img_name5').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name5').html('');
+                    $('.img_name5').append('Try again!..');
+                }
+                $('.pro_id_shop5').html('');
+            }
+        });
+    });
+	
+	
+	 $(document).ready(function(){
+        $('.fileupload').fileupload({
+            url: "http://holygraceacademy.com/form/site_ctrl/upload_profile",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename1').html('');
+                    $('.filename1').val(data.result.file);
+                    $('.img_name').html('');
+                    $('.img_name').append(' UploadingCompleted...');
+                    $('.pro_id_shop').html('');
+                    move('prog_bar_g_id_1','pro_id_shop');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name').html('');
+                        $('.img_name').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name').html('');
+                        $('.img_name').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name').html('');
+                    $('.img_name').append('Try again!..');
+                }
+                $('.pro_id_shop').html('');
+            }
+        });
+    });
+
+	
+	
+	$(document).ready(function(){
+        $('.fileupload6').fileupload({
+            url: "http://holygraceacademy.com/form/site_ctrl/upload_school_receipt",
+            dataType: 'json',
+            send: function(e, data) {
+                $('.pro_id_shop6').html('<img src="public_html/admin_assets/loading_bar.html">');
+                $('.pro_id_shop6').css('display','none');
+            },
+            done: function (e, data) {
+                up_status = '';
+                if(data.result.status==true){
+                    up_status='true';
+                    $('.filename7').html('');
+                    $('.filename7').val(data.result.file);
+                    $('.img_name6').html('');
+                    $('.img_name6').append(' UploadingCompleted...');
+                    $('.pro_id_shop6').html('');
+                    move('prog_bar_g6_id_1','pro_id_shop6');
+                }else if(data.result.status==false){
+                    if(data.result.e_type=='0'){
+                        $('.img_name6').html('');
+                        $('.img_name6').append('Try again!..');
+                    }
+                    if(data.result.e_type=='1'){
+                        $('.img_name6').html('');
+                        $('.img_name6').append(data.result.error);
+                    }
+                }else{
+                    $('.img_name6').html('');
+                    $('.img_name6').append('Try again!..');
+                }
+                $('.pro_id_shop6').html('');
+            }
+        });
+    });
+    function move(id,p_id) {
+        //if(up_status=='true'){
+        $('#'+id+'').css('display','block');
+        var elem = document.getElementById(''+id+'');
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                $('#'+p_id+'').text('');
+                $('#'+p_id+'').text(width+'%');
+            }
+        }
+        //}
+    }
+	
+</script>
+
+</body>
+
+<!-- Mirrored from holygraceacademy.com/form/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Oct 2020 14:17:15 GMT -->
+</html>
